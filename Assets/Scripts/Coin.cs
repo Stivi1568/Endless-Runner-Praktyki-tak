@@ -13,15 +13,15 @@ public class Coin : MonoBehaviour {
             return;
         }
 
-        // Check that the object we collided with is the player
+        
         if (other.gameObject.name != "Player") {
             return;
         }
 
-        // Add to the player's score
+        
         GameManager.inst.IncrementScore();
 
-        // Destroy this coin object
+        
         Destroy(gameObject);
     }
 
